@@ -1,0 +1,79 @@
+.bookmarks-bar {
+  height: 28px;
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-3);
+  gap: var(--space-2);
+  z-index: 40;
+  flex-shrink: 0;
+}
+
+.bookmarks-bar-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.bookmarks-bar-list::-webkit-scrollbar { display: none; }
+
+.bookmark-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 22px;
+  padding: 0 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.bookmark-chip:hover {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.bookmark-chip-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.bookmark-chip-dot {
+  color: #f59e0b;
+  font-size: 10px;
+}
+
+.bookmark-chip-title {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookmarks-bar-all {
+  background: transparent;
+  border: none;
+  color: var(--color-brand-light);
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.bookmarks-bar-all:hover {
+  background: var(--color-surface);
+  color: #ffffff;
+}

@@ -1,0 +1,212 @@
+.settings-page {
+  position: absolute;
+  top: var(--total-toolbar-height, 82px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0e0e17;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+  user-select: none;
+}
+
+.settings-page-header {
+  height: 60px;
+  background: #141422;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  flex-shrink: 0;
+}
+
+.settings-header-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.settings-header-gem {
+  font-size: 20px;
+}
+
+.settings-header-title h2 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.settings-search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 320px;
+  height: 36px;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 0 var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.settings-search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xs);
+  outline: none;
+  font-family: inherit;
+}
+
+.settings-page-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Left Sidebar */
+.settings-sidebar {
+  width: 240px;
+  background: #12121e;
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-4) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.sidebar-nav-item:hover {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+.sidebar-nav-item--active {
+  background: rgba(139, 92, 246, 0.15) !important;
+  color: var(--color-brand-light) !important;
+  font-weight: 600;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-3) 0;
+}
+
+/* Right Main Panel */
+.settings-main-panel {
+  flex: 1;
+  padding: var(--space-6) var(--space-8);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 900px;
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.settings-group-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.settings-card {
+  background: #151524;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.settings-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  gap: var(--space-4);
+}
+
+.settings-card-row:last-child {
+  border-bottom: none;
+}
+
+.settings-card-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.settings-card-desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.radio-label input {
+  accent-color: var(--color-brand);
+}
+
+.badge-pill {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.settings-select-field {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: var(--font-size-xs);
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+}

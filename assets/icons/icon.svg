@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#13131f"/>
+      <stop offset="100%" stop-color="#08080f"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+
+  <!-- Glowing background ring -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="url(#glowGrad)" stroke-width="12" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- Main Shield Shape -->
+  <path d="M256 100 L380 150 C380 270 330 360 256 412 C182 360 132 270 132 150 Z" 
+        fill="url(#glowGrad)" opacity="0.2" stroke="url(#glowGrad)" stroke-width="16" stroke-linejoin="round"/>
+
+  <!-- Inner Aasth Symbol (Stylized 'A' + Infinity / Orbit) -->
+  <path d="M256 160 L320 320 L280 320 L256 250 L232 320 L192 320 Z" fill="white" filter="url(#glow)"/>
+  <circle cx="256" cy="220" r="18" fill="#06b6d4"/>
+  <circle cx="256" cy="360" r="12" fill="#8b5cf6"/>
+</svg>

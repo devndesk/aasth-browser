@@ -1,0 +1,47 @@
+{
+  "name": "aasth-browser",
+  "version": "1.0.0",
+  "description": "Aasth — A fast, private, Chromium-based browser",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "dev": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "build": "electron-forge make"
+  },
+  "keywords": [
+    "browser",
+    "electron",
+    "chromium",
+    "privacy"
+  ],
+  "author": "Aasth Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-webpack": "^7.4.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "css-loader": "^6.8.0",
+    "file-loader": "^6.2.0",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.3.0",
+    "webpack": "^5.89.0",
+    "electron": "^30.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "allowScripts": {
+    "electron@30.5.1": true,
+    "electron-winstaller@5.4.4": true
+  }
+}
